@@ -43,6 +43,7 @@ export var checkouts: string[] = [
   'D19',
   '7 D16',
   'D20',
+
   '9 D16',
   '10 D16',
   '11 D16',
@@ -52,7 +53,8 @@ export var checkouts: string[] = [
   '15 D16',
   '16 D16',
   '17 D16',
-  'Bull',
+
+  'Bull', // 50
   '19 D16',
   '20 D16',
   '13 D20',
@@ -62,7 +64,8 @@ export var checkouts: string[] = [
   '17 D20',
   '18 D20',
   '19 D20',
-  '20 D20',
+
+  '20 D20', // 60
   'T15 D8',
   'T10 D16',
   'T13 D12',
@@ -72,7 +75,8 @@ export var checkouts: string[] = [
   'T17 D8',
   'T20 D4',
   'T15 D12',
-  'T10 D20',
+
+  'T10 D20', // 70
   'T13 D16',
   'T16 D12',
   'T19 D8',
@@ -82,7 +86,8 @@ export var checkouts: string[] = [
   'T19 D10',
   'T18 D12',
   'T19 D11',
-  'T20 D10',
+
+  'T20 D10', // 80
   'T19 D12',
   'T14 D20',
   'T17 D16',
@@ -91,11 +96,11 @@ export var checkouts: string[] = [
   'T18 D16',
   'T17 D18',
   'T16 D20',
+  'T19 D16',
+  'T20 D15', // 90
   'T17 D20',
   'T20 D16',
   'T19 D18',
-  'T19 D16',
-  'T20 D15',
   'T18 D20',
   'T19 D19',
   'T20 D18',
