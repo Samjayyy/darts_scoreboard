@@ -1,0 +1,11 @@
+.player {
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align:center;
+  .player-name {
+    text-overflow: ellipsis;
+  }
+}
+.player[selected='true'] {
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+<div class="players clocks row" *ngIf="this.game && this.game.players">
+  <div *ngFor="let player of this.game.players" class="col">
+    <div class="text-center margin-auto">
+      <app-playerscore [player]="player"></app-playerscore>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div>
+  <ul class="nav nav-pills" id="game_menu">
+    <li class="nav-item" *ngIf="!!this.game">
+      <button
+        type="button"
+        class="btn btn-block btn-lg btn-outline-dark"
+        [routerLink]="['/overview']"
+      >
+        <i class="bi bi-skip-forward"></i> Continue game
+      </button>
+    </li>
+    <li class="nav-item">
+      <button
+        type="button"
+        class="btn btn-block btn-lg btn-outline-dark"
+        [routerLink]="['/create']"
+      >
+        <i class="bi bi-file-play"></i> New Game
+      </button>
+    </li>
+  </ul>
+</div>

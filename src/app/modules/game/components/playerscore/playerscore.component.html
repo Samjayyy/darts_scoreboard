@@ -1,0 +1,9 @@
+<div *ngIf="this.player" class="player" [attr.selected]="this.player.selected">
+  <div class="player-name">
+    <h3>{{ this.player.name }}</h3>
+  </div>
+  <hr />
+  <h2>Score: {{ this.player.score }}</h2>
+  <h4>Avg: {{ this.player.avgScore | number: '1.0-2' }} {{ this.player.subScoreString }}</h4>
+  <h4 *ngIf="suggest(player.score)">Suggestion: {{suggest(player.score)}}</h4>
+</div>

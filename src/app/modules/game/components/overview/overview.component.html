@@ -1,0 +1,40 @@
+<div *ngIf="this.game && this.game.players" class="container">
+  <div class="row">
+    <div *ngFor="let player of this.game.players" class="col player-short" [attr.selected]="this.player.selected">
+      <span [class.selected]="player.selected">
+        {{ player.name }} {{ player.score }} {{ player.subScoreString }}
+      </span>
+    </div>
+  </div>
+  <div class="players row">
+    <app-playerscore [player]="game.selectedPlayer"></app-playerscore>
+  </div>
+</div>
+<div class="row score">
+  <div class="score">
+    <span *ngIf="processing" class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
+    </span>
+    <span class="scorevalue">{{ givenNumber }}</span>
+    &nbsp;
+  </div>
+</div>
+<ng-numeric-keyboard
+  (press)="handleKey($event)"
+  [disableKey]="shouldDisableKey"
+></ng-numeric-keyboard>
+<div class="fixed-bottom">
+  <div class="row score">
+    <div class="score">
+      <span *ngIf="processing" class="spinner-grow" role="status">
+        <span class="sr-only">Loading...</span>
+      </span>
+      <span class="scorevalue">{{ givenNumber }}</span>
+      &nbsp;
+    </div>
+  </div>
+  <ng-numeric-keyboard
+    (press)="handleKey($event)"
+    [disableKey]="shouldDisableKey"
+  ></ng-numeric-keyboard>
+</div>

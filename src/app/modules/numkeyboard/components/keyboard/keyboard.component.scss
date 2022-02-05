@@ -1,0 +1,54 @@
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin-left: -1px;
+}
+
+.numeric-keyboard {
+  width: 100%;
+  height: 100%;
+  background: #e0e0e0;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 7px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.numeric-keyboard-key {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+  color: #3b3b3b;
+  background: #fafafa;
+  padding: 5px 0 5px 0;
+  border-radius: 5px;
+
+  &:active {
+    background: #e1e1e1;
+    cursor: pointer;
+  }
+
+  &.numeric-keyboard-key[data-key=''],
+  &.numeric-keyboard-key[disabled='true'] {
+    pointer-events: none;
+    cursor: not-allowed;
+    background: #e1e1e1;
+  }
+  &.action {
+    background: #EAEAEA;
+  }
+
+  &.numeric-keyboard-key:active,
+  &.numeric-keyboard-key:hover {
+    background: #C1C1C1;
+    cursor: pointer;
+  }
+
+}
+
